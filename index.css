@@ -1,0 +1,96 @@
+:root {
+  --blue: #0d2366;
+  --white: #ffffff;
+  --black: #000;
+  --orange: #fe842d;
+  --yellow: #eedc9a;
+  --fawn: #c8a951;
+  --teal: #1a93cb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--yellow);
+}
+
+.form {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid var(--fawn);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+label {
+  color: var(--blue);
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.15em;
+  margin: 0 1rem 0.5rem 0;
+}
+
+/* Styling for the form fields */
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0.75rem 0;
+  box-sizing: border-box;
+  border: 2px solid var(--fawn);
+  border-radius: 4px;
+  background-color: var(--white);
+  font-size: 16px;
+}
+
+.border-bottom {
+  display: block;
+  width: 3rem;
+  border-bottom: 5px solid var(--fawn);
+  margin: 0.5rem 0;
+}
+
+#captcha {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  background-color: var(--yellow);
+  max-width: 10rem;
+}
+
+.button--primary {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1em;
+  color: var(--blue);
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  background-color: var(--fawn);
+}
