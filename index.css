@@ -36,7 +36,7 @@ h1 {
 .form {
   background-color: #fefefe;
   margin: 15% auto;
-  padding: 2rem;
+  padding: 1.5rem;
   border: 2px solid var(--fawn);
   border-radius: 10px;
   width: 80%;
@@ -75,7 +75,7 @@ input[type='password'] {
 #captcha {
   margin-top: 0.5rem;
   padding: 1rem;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 600;
   letter-spacing: 0.25em;
   background-color: var(--yellow);
