@@ -28,3 +28,9 @@ document.querySelector('form').addEventListener('submit', (e) => {
     captcha.textContent = captchaText;
   }
 });
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});

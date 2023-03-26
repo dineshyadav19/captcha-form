@@ -9,24 +9,32 @@
     <script src="./index.js" async></script>
   </head>
   <body>
-    <div class="container center">
+    <div class="container">
+      <div class="dark--mode">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+          <!-- <i class="fas fa-moon"></i>
+          <i class='fas fa-sun'></i> -->
+          <div class='ball'></div> 
+        </label>
+      </div>
       <form class="form">
         <h1>Client Side Captcha Form</h1>
         <div class="border-bottom"></div>
         <label for="email">Email:</label>
-        <input type="email" id="email" required placeholder="Enter Your Email"/>
+        <input type="email" id="email" required placeholder="Enter Your Email" />
         <br />
         <label for="password">Password:</label>
-        <input type="password" id="password" required placeholder="Enter Your Password"/>
+        <input type="password" id="password" required placeholder="Enter Your Password" />
         <br />
         <label for="captcha">Captcha:</label>
         <div id="captcha"></div>
-        <input type="text" id="captcha-input" required placeholder="Enter the Captcha"/>
+        <input type="text" id="captcha-input" required placeholder="Enter the Captcha" />
         <br />
         <div class="center">
           <button type="submit" class="button--primary">Submit</button>
-        </div>    
+        </div>
       </form>
-    </div>
+    </div>    
   </body>
 </html>

@@ -11,6 +11,57 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--yellow);
+}
+
+body.dark {
+  background-color: #292c35;
+}
+//dark mode
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  left: 2px;
+}
+
+.label {
+  width: 40px;
+  height: 16px;
+  background-color: #111;
+  border-radius: 50px;
+  padding: 5px;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+
+.dark--mode {
+  display: flex;
+  justify-content: end;
+  margin: 1rem auto;
+  padding: 1.5rem;
 }
 
 h1 {
@@ -27,15 +78,12 @@ h1 {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-  background-color: var(--yellow);
+  overflow: hidden;
 }
 
 .form {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 1.5rem;
   border: 2px solid var(--fawn);
   border-radius: 10px;
